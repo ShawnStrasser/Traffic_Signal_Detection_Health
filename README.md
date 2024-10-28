@@ -1,15 +1,17 @@
 # ATSPM Aggregation
 
-`atspm` is a cutting-edge, lightweight Python package that transforms raw traffic signal controller event logs into meaningful Traffic Signal Performance Measures (TSPMs). These measures help transportation agencies continuously monitor and optimize signal timing perfomance, detect issues, and take proative actions - all in real-time. This tool, currently in production by the Oregon DOT, simplifies the process of working with large datasets of traffic signal events, enabling more effective traffic management.
+`atspm` is a cutting-edge, lightweight Python package that transforms raw traffic signal controller event logs into meaningful Traffic Signal Performance Measures (TSPMs). These measures help transportation agencies continuously monitor and optimize signal timing perfomance, detect issues, and take proative actions - all in real-time. 
+
+
 
 ## What makes ATSPM Different from Traditional Methods like Synchro?
 Unlike traditional traffic signal optimization tools like Synchro, which rely on periodic manual data collection and simulation models, ATSPM uses real-time data directly collected from signal controllers installed at intersections (inside the ITS cabinets). This real-time reporting capability allows agencies to generate performance data for any selected time range, making it ideal for continuously monitoring signal perfromance and diagnosing problems before they escalate.
 
 Traditional signal retiming projects often depend on infrequent manual traffic studies and citizen complaints to detect problems. This reactive approach can delay maintencance, increase congestion and compromise road safety. On the other hand, ATSPMs enable proactive management by continuously collecting data and monitoring traffic signal performance, allowing agencies to solve issues before they lead to major traffic disruptions.
 
-ODOT, for example uses the MAxView software to report ATSPMs which include various key parameters such as ***purdue phase termination***, ***split monitor***, ***pedestrian delay***, ***preemption details***, ***turning movement counts***, ***approach volume and delay***, ***arrivals on red***, ***yellow and red actuations***, ***purdue split failure***.
+The Python `atspm` project is inspired by UDOT ATSPM, (https://github.com/udotdevelopment/ATSPM) which is a full stack application for collecting data from signal controllers and visualizing it at the intersection level for detailed real-time troubleshooting and analysis. This atspm package focuses instead on aggregation and analytics, enabling more of a system-wide monitoring approach. Both projects are complimentary and can be deployed together.
 
-With over 330,000 traffic signals operating in the US, agencies typically retime these signals every three to five years at a cost of around $4,500 per intersetion. ATSPMs provide a significant improvement over this traditional model by offering continuous performance monitoring, reducing the need for costly manual interventions.
+With over 330,000 traffic signals operating in the US, agencies typically retime these signals every three to five years at a cost of around $4,500 per intersetion. ATSPMs provide a significant improvement over this traditional model by offering continuous performance monitoring, reducing the need for costly manual interventions. (https://ops.fhwa.dot.gov/publications/fhwahop20002/ch2.htm)
 
 This project focuses only on transforming event logs into performance measures and troubleshooting data, it does include data visualization. Feel free to submit feature requests or bug reports or to reach out with questions or comments. Contributions are welcome! 
 
